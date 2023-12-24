@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Nursery - Customer Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        #profile-container {
+            width: 80%;
+            margin: 2em auto;
+            background-color: white;
+            padding: 1em;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #order-history {
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        #logout-btn {
+            background-color: #f44336;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        #logout-btn:hover {
+            background-color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Green Nursery</h1>
+    </header>
+
+    <div id="profile-container">
+        <h2>Welcome, Back!</h2>
+        <p>Email: customer@email.com</p>
+
+        <h3>Order History</h3>
+        <div id="order-history">
+            <table>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Date</th>
+                    <th>Total Amount</th>
+                </tr>
+                <!-- Sample order history data -->
+                <tr>
+                    <td>001</td>
+                    <td>2023-01-01</td>
+                    <td>$50.00</td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>2023-02-15</td>
+                    <td>$30.00</td>
+                </tr>
+            </table>
+        </div>
+
+        <button id="logout-btn" onclick="window.location.href='index.html'">Back</button>
+    </div>
+
+    <script>
+        function logout() {
+            // Perform logout actions (e.g., redirect to logout page)
+            alert("Logout successful!");
+            // Redirect to logout page or perform other logout actions as needed
+            // window.location.href = "logout.html";
+        }
+    </script>
+
+</body>
+</html>

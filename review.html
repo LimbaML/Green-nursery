@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Green Nursery Plant Reviews</title>
+    <link rel="stylesheet" type="text/css" href="review.css">
+</head>
+
+<body>
+    <h1>Green Nursery's🌿Plant Reviews⭐⭐⭐</h1>
+    
+        <div class="review">
+        <h3>Beautiful Roses</h3>
+        <p>The roses I bought from Green Nursery are absolutely beautiful. They bloomed within a week and have vibrant colors.<br>⭐⭐⭐⭐⭐
+        </p>
+        <h5>-Happy Gardener</h5>
+    </div>
+
+    <div class="review">
+        <h3>Healthy Succulents</h3>
+        <p>I purchased a variety of succulents, and they all arrived in excellent condition. The packaging was great, and they are thriving in my garden.<br>⭐⭐⭐⭐ </p>
+        <h5>-Succulent Lover</h5>
+    </div>   
+    <div id="reviews-container"></div>
+
+     <form id="feedbackForm">
+    <h2>Add Your Feedback⭐</h2>
+
+    <label for="plantName">Plant Name:</label>
+    <input type="text" id="plantName" name="plantName" required>
+
+    <label for="feedback">Your Feedback:</label>
+    <textarea id="feedback" name="feedback" required></textarea>
+
+   
+    <h5 class="rating-title" style="font-size: 16px;margin:10px 0px">Rating: <span id="selected-rating">0</span></h5>
+    <div class="star-container" id="star-container">
+        <span class="star" onclick="rate(1)">★</span>
+        <span class="star" onclick="rate(2)">★</span>
+        <span class="star" onclick="rate(3)">★</span>
+        <span class="star" onclick="rate(4)">★</span>
+        <span class="star" onclick="rate(5)">★</span>
+    </div>
+
+   
+
+    <label for="reviewername">Reviewer Name:</label>
+    <input type="text" id="reviewername" name="reviewername" required><br><br>
+
+    <button type="button" onclick="addFeedback()" class="submit">Submit Feedback</button>
+</form>
+
+<div id="footer">Copyright &copy; 2023 Green Nursery💚
+</div>
+
+<script src="review.js"></script>
+</body>
+
+</html>
+

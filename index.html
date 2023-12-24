@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Green Nursery</title>
+	<script src="https://kit.fontawesome.com/59e3a96dbd.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<style type="text/css">
+		
+	</style>
+</head>
+<body>
+	<header>
+		<h1><i class="fa-brands fa-canadian-maple-leaf" style="color: #f7f7f7;"><span> Green Nursery💚</span></i></h1>
+	</header>
+		
+    <div class="nav-container">
+	<nav class="nav1">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="pots.html">Pots</a></li>
+			<li><a href="other products.html">Other Products</a></li>
+			<li><a href="about us.html">About us</a></li>
+			<li><a href="review.html">Reviews</a></li>
+		</ul>
+	</nav>
+	<div class="mobile-menu-icon" onclick="toggleMobileMenu()">
+        <i class="fas fa-bars"></i>
+    </div>
+
+	<nav class="nav2">		
+			<input type="text" id="search-bar"placeholder="Search products..." oninput="filterProducts()">
+       
+			<i class="fa-solid fa-magnifying-glass"></i>
+			<a href="cart.html" style="color:black;">
+			<i class="fa-solid fa-cart-shopping" style="margin-left: 10px; margin-right: 10px;">
+				 <sup><span id="cart-count">0</span></sup>
+			</i>
+
+		</a>
+		<a href="profile.html" style="color:black;"><i class="fa-regular fa-user"></i></a>
+			
+	</nav>
+	  
+</div>
+	 <marquee direction="right" style="padding-top: 5px ;" ; bgcolor= "#c4c0c0" height="25px" jutify-content="center" text-lign="center">50% Off Winter Sale!!!</marquee><br> 
+
+<div id="product-list" class="container">
+		<div class="box item">
+		<div><a href="garden plants.html"><img src="images/Garden plants.jpg" class="ab"></a></div>
+		 <div class="yeww" class="product-item"><p><span>Garden Plants</span><br> Best Garden Plants 🌿</p></div>
+
+	    </div>
+	    <div class="box item">
+		<div><a href="flowering plants.html"><img src="images/flowering Plant.jpg" class="ab"></a></div>
+		 <div class="yeww" class="product-item"><p><span>Flowering Plants </span><br> Plants under ₹2000 💵</p></div>
+
+	    </div>
+	    <div class="box item">
+		<div><a href="bonsai plants.html"><img src="images/Bonsai.jpg" class="ab"></a></div>
+		 <div class="yeww" class="product-item"><p><span>Bonsai Plants</span> <br> Plants with Good Fortune ✨</p></div>
+
+	    </div>
+	   
+		<div class="box item">
+		<div><a href="fruit plants.html"><img src="images/Fruit plants.jpg" class="ab"></a></div>
+		 <div class="yeww" class="product-item"><p><span>Fruit Plants</span><br>Sweety Fruity Plants 🍈</p></div>
+
+	    </div>
+	    <div class="box item">
+		<div><a href="climbers.html"><img src="images/climbers2.png" class="ab"></a></div>
+		 <div class="yeww" class="product-item"><p><span>Climbers</span><br>Decorater Plant climbers 🌱</p></div>
+
+	    </div>
+	    <div class="box item">
+		<div><a href="rose plants.html"><img src="images/Rose plant.jpg" class="ab"></a></div>
+		 <div class="yeww" class="product-item"><p><span>Rose Plants</span><br> Plants with scent of love🌹</p></div>
+
+	    </div>
+
+	  </div>
+
+<!--<div class="footer" style="
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    /* Set your desired background color */
+    
+    text-align: center;
+    color: #333; /* Set your desired text color */
+
+">
+	  <footer>
+        Copyright &copy; 2023 Green Nursery💚
+    </footer>
+</div>-->
+<script type="text/javascript" src="shopping.js"></script>
+
+<script>
+        function filterProducts() {
+            var input, filter, items, item, title, i;
+            input = document.getElementById('search-bar');
+            filter = input.value.toUpperCase();
+            items = document.getElementsByClassName('box');
+
+            for (i = 0; i < items.length; i++) {
+                item = items[i];
+                title = item.querySelector('.yeww p span');
+                if (title.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                    item.style.display = '';
+                } else {
+                    item.style.display = 'none';
+                }
+            }
+        }
+
+function toggleMobileMenu() {
+    var nav1List = document.querySelector('.nav1 ul');
+    nav1List.classList.toggle('show');
+}
+
+</script>
+</body>
+</html>

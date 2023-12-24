@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>About Green Nursery</title>
+    <style type="text/css">
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #28a745;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+.image span{
+    margin-left:400px;
+
+}
+
+section {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    border-radius: 8px;
+    position: relative;
+    z-index: 1;
+}
+
+h1, h2 {
+    color: #28a745;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.testimonial {
+    display: none;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.testimonial p {
+    font-style: italic;
+    color: #555;
+}
+
+.toggle-testimonials {
+    cursor: pointer;
+    color: #28a745;
+}
+
+.image {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image img {
+    width: 100%; /* Use 100% width for better responsiveness */
+    max-width: 250px; /* Limit maximum width */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Add space below image */
+}
+
+.image p {
+   
+
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center; /* Center text */
+}
+
+@media screen and (max-width: 600px) {
+    .image {
+        flex-direction: column;
+    }
+
+    .image span {
+        margin-left: 0; /* Adjust spacing */
+    }
+}
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 style="color:white;font-style: oblique;font-weight: bolder;font-size: 35px">Green Nursery💚</h1>
+        <p>Since 2003 - Growing Nature's Beauty</p>
+    </header>
+
+    <section>
+        <div class="image">
+            <img src="images\Green nursery.png" style="width:250px;height: 250px;">
+            <p style="margin-top:10px"><span style="font-style: oblique;color:seagreen;font-weight: bolder;font-size: 22px;margin-left: 0px">Green Nursery💚</span><br>Since 2003 - Growing Nature's Beauty<br><br>"Greenery is not just a color; it's a way of life. At Green Nursery, we bring life and vibrancy to your world."<br><span style="color:seagreen;">~Anonymous</span><br><br>"Planting a seed is believing in tomorrow. Since 2003, Green Nursery has been sowing the seeds of beauty and sustainability."<br><span style="color:seagreen;">~Green Nursery</span></p>
+        </div>
+        
+        <h2>Our Story</h2>
+        <p>Green Nursery has been a trusted name in the world of plants since 2003. We started with a passion for bringing nature's beauty to homes and gardens. Over the years, our commitment to quality and customer satisfaction has made us a preferred choice for plant enthusiasts worldwide.</p>
+
+        <h2>Wide Variety of Plants</h2>
+        <p>At Green Nursery, we take pride in offering a diverse range of plants to suit every taste and need. From vibrant flowering plants to exotic succulents, our collection is carefully curated to bring diversity and beauty to your garden or indoor space.</p>
+
+        <h2 class="toggle-testimonials">Customer Testimonials</h2>
+        <div class="testimonial">
+            <p>"I've been a loyal customer of Green Nursery for years. The quality of their plants is unmatched, and their customer service is exceptional. My garden is a testament to the beauty they provide!"</p>
+            <p>- Happy Gardener, John Doe</p>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        // script.js
+
+$(document).ready(function () {
+    // Get the testimonial section
+    var testimonialSection = $('.testimonial');
+
+    // Add a click event to show/hide the testimonial when the "Customer Testimonials" heading is clicked
+    $('.toggle-testimonials').on('click', function () {
+        testimonialSection.slideToggle();
+    });
+});
+
+    </script>
+
+</body>
+</html>
